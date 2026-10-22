@@ -1,23 +1,13 @@
 name: 📗 Report Docs Issue
-description: See a typo? Outdated or incorrect information? Let us know!
-title: "<title>"
+description: Use this to report a typo or incorrect information.
 labels: [documentation]
+type: Task
 body:
-- type: markdown
-  attributes:
-    value: Sometimes something slips through the cracks, and the documentation is not quite right. Thanks for letting us know!
-- type: input
-  id: link
-  attributes:
-    label: Link to the Page
-- type: textarea
-  id: quote
-  attributes:
-    label: Describe the Issue
-- type: dropdown
-  id: participate
-  attributes:
-    label: Are you able to create a Pull Request with the fix?
-    options:
-      - 'Yes'
-      - 'No'
+  - type: input
+    id: link
+    attributes:
+      label: Link to the Page
+  - type: textarea
+    id: quote
+    attributes:
+      label: Describe this issue. Screenshots are encouraged.

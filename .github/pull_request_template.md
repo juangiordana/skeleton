@@ -1,14 +1,24 @@
-## Before submitting the PR:
-- [ ] Does your PR reference an issue? If not, please [chat to the team on Discord](https://discord.gg/EXqV7W8MtY) or [GitHub](https://github.com/skeletonlabs/skeleton/discussions) before submission.
-- [ ] Did you update and run tests before submission using `npm run test`?
-- [ ] Does your branch follow our [naming convention](https://www.skeleton.dev/docs/contributing)? If not, please amend the branch name using `branch -m new-branch-name`
-- [ ] Did you update documentation related to your new feature or changes?
+## Linked Issue(s)
 
-## What does your PR address?
+<!-- Closes #0000 -->
 
-Please briefly describe your changes here.
+## Description
 
-### Tips
-- Tap "convert to draft" to indicate this is work in progress.
-- Link to an issue using the verbiage [Fixes #XX](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)
-- Linked issues will auto-close when the PR is merged.
+<!-- Description -->
+
+## Checklist
+
+Please read our [contribution requirements](https://skeleton.dev/docs/svelte/resources/contribute/) and make sure you have:
+
+- [ ] Prefixed your branch name with: `docs/`, `feature/`, `task/`, `bugfix/`
+- [ ] Targeted the `main` branch
+- [ ] Documented any changes made
+- [ ] Supplied a [changeset](#changesets) (if changes were made to any project within `/packages`)
+
+## Changesets
+
+[View our documentation](https://skeleton.dev/docs/svelte/resources/contribute/get-started#changesets) to learn more about [changesets](https://github.com/changesets/changesets). To create a changeset:
+
+1. Navigate to the root of the monorepo in your terminal
+2. Run `pnpm changeset` and follow the prompts
+3. Commit and push the changeset before flagging your PR ready for review.

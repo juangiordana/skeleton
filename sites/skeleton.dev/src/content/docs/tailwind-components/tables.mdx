@@ -1,0 +1,66 @@
+---
+title: Tables
+description: Provides a set of styles for native HTML table elements.
+---
+
+import Preview from '@/components/ui/preview.svelte';
+
+import Default from '@/components/examples/tailwind-components/tables/default.astro';
+import DefaultRaw from '@/components/examples/tailwind-components/tables/default.astro?raw';
+import Full from '@/components/examples/tailwind-components/tables/full.astro';
+import FullRaw from '@/components/examples/tailwind-components/tables/full.astro?raw';
+import Nav from '@/components/examples/tailwind-components/tables/nav.astro';
+import NavRaw from '@/components/examples/tailwind-components/tables/nav.astro?raw';
+import Zebra from '@/components/examples/tailwind-components/tables/zebra.astro';
+import ZebraRaw from '@/components/examples/tailwind-components/tables/zebra.astro?raw';
+
+<Preview files={{ 'app.astro': DefaultRaw }} client:visible>
+	<Default />
+</Preview>
+
+## Zebra Striping
+
+Apply the `table-zebra` class to add alternating row background colors.
+
+<Preview files={{ 'app.astro': ZebraRaw }} client:visible>
+	<Zebra />
+</Preview>
+
+## Extras
+
+Optionally add a header, footer, and caption.
+
+<Preview files={{ 'app.astro': FullRaw }} client:visible>
+	<Full />
+</Preview>
+
+## Navigation
+
+Note that table rows and cells are [not interactive](https://www.w3.org/WAI/ARIA/apg/patterns/table/). Instead, use anchors or buttons within the last cell.
+
+<Preview files={{ 'app.astro': NavRaw }} client:visible>
+	<Nav />
+</Preview>
+
+## Layout
+
+See [Tailwind's utility classes](https://tailwindcss.com/docs/table-layout) for adjusting the table layout algorithm. Apply this to the Table element.
+
+| Class         | Styles               |
+| ------------- | -------------------- |
+| `table-auto`  | table-layout: auto;  |
+| `table-fixed` | table-layout: fixed; |
+
+## Hover Rows
+
+Add a visual hover effect using the following Tailwind syntax.
+
+```html
+<tbody class="[&>tr]:hover:preset-tonal-primary">
+	...
+</tbody>
+```
+
+## Pagination
+
+Pair with the Skeleton [Pagination](/docs/[framework]/framework-components/pagination/) component for large data sets.

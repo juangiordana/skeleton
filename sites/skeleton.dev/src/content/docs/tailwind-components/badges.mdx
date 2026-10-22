@@ -1,0 +1,43 @@
+---
+title: Badges
+description: Show notifications, counts, or status information on navigation and icons
+---
+
+import Preview from '@/components/ui/preview.svelte';
+
+import ButtonBadge from '@/components/examples/tailwind-components/badges/button-badge.astro';
+import ButtonBadgeRaw from '@/components/examples/tailwind-components/badges/button-badge.astro?raw';
+import Default from '@/components/examples/tailwind-components/badges/default.astro';
+import DefaultRaw from '@/components/examples/tailwind-components/badges/default.astro?raw';
+import Overlap from '@/components/examples/tailwind-components/badges/overlap.astro';
+import OverlapRaw from '@/components/examples/tailwind-components/badges/overlap.astro?raw';
+import Presets from '@/components/examples/tailwind-components/badges/presets.astro';
+import PresetsRaw from '@/components/examples/tailwind-components/badges/presets.astro?raw';
+
+<Preview files={{ 'app.astro': DefaultRaw }} client:visible>
+	<Default />
+</Preview>
+
+## Inline
+
+Display badges inline within buttons or list items.
+
+<Preview files={{ 'app.astro': ButtonBadgeRaw }} client:visible>
+	<ButtonBadge />
+</Preview>
+
+## Overlapped
+
+Create overlapping numeric or icon badge display.
+
+<Preview files={{ 'app.astro': OverlapRaw }} client:visible>
+	<Overlap />
+</Preview>
+
+## Presets
+
+Provides full support of [Presets](/docs/[framework]/tailwind-utilities/presets).
+
+<Preview files={{ 'app.astro': PresetsRaw }} client:visible>
+	<Presets />
+</Preview>

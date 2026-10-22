@@ -1,38 +1,43 @@
-[![Skeleton](https://user-images.githubusercontent.com/1509726/199282306-7454adcb-b765-4618-8438-67655a7dee47.png)](https://www.skeleton.dev/)
+# Skeleton
 
-[![npm version](https://img.shields.io/npm/v/@skeletonlabs/skeleton?logo=npm&color=cb3837)](https://www.npmjs.com/package/@skeletonlabs/skeleton)
-[![Chat](https://img.shields.io/discord/1003691521280856084?label=chat&logo=discord&color=7289da)](https://discord.gg/EXqV7W8MtY)
-[![license](https://img.shields.io/badge/license-MIT-%23bada55)](https://github.com/skeletonlabs/skeleton/blob/master/LICENSE)
+[![npm version](https://flat.badgen.net/npm/v/@skeletonlabs/skeleton?color=7926CB&label=skeleton)](https://www.npmjs.com/package/@skeletonlabs/skeleton)
+[![npm version](https://flat.badgen.net/npm/v/@skeletonlabs/skeleton-react?color=7926CB&label=skeleton-react)](https://www.npmjs.com/package/@skeletonlabs/skeleton-react)
+[![npm version](https://flat.badgen.net/npm/v/@skeletonlabs/skeleton-svelte?color=7926CB&label=skeleton-svelte)](https://www.npmjs.com/package/@skeletonlabs/skeleton-svelte)
+[![license](https://flat.badgen.net/github/license/skeletonlabs/skeleton?color=7926CB)](https://github.com/skeletonlabs/skeleton/blob/master/LICENSE)
+[![Chat](https://img.shields.io/discord/1003691521280856084?style=flat&label=Discord&logo=discord&color=7926CB)](https://discord.gg/EXqV7W8MtY)
+[![Chat](https://img.shields.io/discord/1003691521280856084?style=flat&label=Bluesky&logo=bluesky&color=7926CB)](https://bsky.app/profile/skeleton.dev)
 
-# 💀 Skeleton
+[![Skeleton](https://i.imgur.com/pYyZSj6.png)](https://www.skeleton.dev/)
 
-Skeleton is an open source UI toolkit built with Svelte + Tailwind that allows you to create reactive web interfaces using [Svelte](https://svelte.dev/) + [Tailwind CSS](https://tailwindcss.com/).
+Skeleton uses [Tailwind CSS](https://tailwindcss.com/) as the foundation for building adaptive design systems. Including turnkey components for your favorite web frameworks.
 
-## 🔗 Useful Links
+## 📖 Get Started
 
 - [Documentation](https://skeleton.dev/)
-- [Contribution Guide](https://skeleton.dev/docs/contributing)
-<!-- - [Project Roadmap](https://github.com/skeletonlabs/skeleton/wiki/%F0%9F%9B%A3%EF%B8%8F-The-Skeleton-Roadmap) -->
+- [Theme Generator](https://themes.skeleton.dev/themes/create)
 
-## 👋 Community
+## 👥 Community
 
-- [Join the Discord](https://discord.gg/EXqV7W8MtY)
-- [Follow on Twitter](https://twitter.com/SkeletonUI)
+- [GitHub](https://github.com/skeletonlabs/skeleton)
+- [Discord](https://discord.gg/EXqV7W8MtY)
+- [Bluesky](https://bsky.app/profile/skeleton.dev)
+- [YouTube](https://www.youtube.com/@skeletonlabs)
 
-## 👍 Sponsor the Project
+## 🤝 Support
 
-- [Ko-Fi](https://ko-fi.com/skeletonlabs)
+- [Reach out on Discord](https://discord.gg/EXqV7W8MtY)
+- [Submit a GitHub Issue](https://github.com/skeletonlabs/skeleton/issues/new/choose)
+- [Start a GitHub Discussion](https://github.com/skeletonlabs/skeleton/discussions)
+
+## 👍 Sponsor Us
+
 - [GitHub Sponsors](https://github.com/sponsors/skeletonlabs)
-- [Patreon](https://patreon.com/user?u=83786276)
+- [Ko-Fi](https://ko-fi.com/skeletonlabs)
 
-## 🐞 Report an Issue
+## 🛠️ Contribute
 
-- [File a Ticket](https://github.com/skeletonlabs/skeleton/issues/new/choose)
-
-## 🛠️ Contributions
-
-We've provided a detailed [contribution guide](https://www.skeleton.dev/docs/contributing) to help you get started. [Find an open issue](https://github.com/skeletonlabs/skeleton/issues), discuss the requirements with other contributors, then send a PR!
+Browse the [contribution guidelines](https://www.skeleton.dev/docs/svelte/resources/contribute) to help you get started.
 
 ## Maintainers
 
-Skeleton was created by [Chris Simmons](https://github.com/endigo9740) (@endigo9740) and is currently maintained by [Skeleton Labs](https://www.skeletonlabs.co/) and the open source community.
+Created by [Chris Simmons](https://endigodesign.com/) ([@endigo9740](https://github.com/endigo9740)) and maintained by [Skeleton Labs](https://www.skeletonlabs.co/) and the [open source community](https://github.com/skeletonlabs/skeleton/graphs/contributors).

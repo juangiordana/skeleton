@@ -1,22 +1,13 @@
 name: 🛠️ Request New Feature
-description: Let us know what we should add.
+description: Let us know what you would like to see added.
 labels: ['feature request']
+type: Feature
 body:
   - type: textarea
     id: description
     attributes:
-      label: Describe what feature you'd like. Pseudo-code, mockups, or screenshots of similar solutions are encouraged!
-  - type: dropdown
-    id: category
-    attributes:
-      label: What type of pull request would this be?
-      options:
-        - 'New Feature'
-        - 'Enhancement'
-        - 'Guide'
-        - 'Docs'
-        - 'Other'
+      label: Describe the feature in detail (code, mocks, or screenshots encouraged)
   - type: textarea
     id: references
     attributes:
-      label: Any links to similar examples or other references we should review? 
+      label: Provide relevant links, wireframes, prototypes, or additional information.

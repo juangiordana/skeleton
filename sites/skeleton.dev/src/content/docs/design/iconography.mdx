@@ -1,0 +1,105 @@
+---
+title: Iconography
+description: Learn about the Skeleton iconography system.
+summary: Skeleton takes an agnostic approach to icons, allowing you to use any combination of SVGs, emoji, unicode, or dedicated icon libraries. Mix and match to fulfill your project's unique requirements.
+references:
+  source: 'https://github.com/skeletonlabs/skeleton/blob/main/packages/skeleton/src/utilities/iconography.css'
+order: 40
+---
+
+import Framework from '@/components/ui/framework.astro';
+import Preview from '@/components/ui/preview.svelte';
+
+import DefaultReact from '@/components/examples/design/iconography/react/default';
+import DefaultReactRaw from '@/components/examples/design/iconography/react/default?raw';
+import Size from '@/components/examples/design/iconography/size.astro';
+import SizeRaw from '@/components/examples/design/iconography/size.astro?raw';
+import DefaultSvelte from '@/components/examples/design/iconography/svelte/default.svelte';
+import DefaultSvelteRaw from '@/components/examples/design/iconography/svelte/default.svelte?raw';
+
+## Lucide
+
+<Framework id="react">
+	<Preview framework="react" files={{ 'app.tsx': DefaultReactRaw }} client:visible>
+		<DefaultReact client:visible />
+	</Preview>
+</Framework>
+<Framework id="svelte">
+	<Preview framework="svelte" files={{ 'app.svelte': DefaultSvelteRaw }} client:visible>
+		<DefaultSvelte client:visible />
+	</Preview>
+</Framework>
+
+While Skeleton is icon-agnostic, we recommend [Lucide](https://lucide.dev/) for its broad framework support and clean aesthetic. All examples found on this site use Lucide, but feel free to substitute with any alternative.
+
+<Framework id="svelte">
+	<figure class="linker bg-noise">
+		<a href="https://lucide.dev/guide/packages/lucide-svelte" target="_blank" class="btn preset-filled">
+			Install Lucide
+		</a>
+	</figure>
+</Framework>
+<Framework id="react">
+	<figure class="linker bg-noise">
+		<a href="https://lucide.dev/guide/packages/lucide-react" target="_blank" class="btn preset-filled">
+			Install Lucide
+		</a>
+	</figure>
+</Framework>
+
+## Sizes
+
+You can size icons and related elements using the following utility classes:
+
+- `size-elem-*`
+- `h-elem-*`
+- `w-elem-*`
+
+> TIP: Tailwind Components (buttons, badges, chips, field sizes, etc) adjust icon size automatically for any SVG-based icons (such as Lucide). Explicitly setting the size is redundant.
+
+<Preview files={{ 'app.astro': SizeRaw }} client:visible>
+	<Size />
+</Preview>
+
+Icon sizes are based on Tailwind's built in `--text-*` property, which means you can match icon sizes as follows.
+
+```html
+<div class="flex items-center gap-4">
+	<SomeIcon class="size-elem-{size}" />
+	<div class="h-elem-{size}">...</div>
+</div>
+```
+
+As well as extend with custom icon sizes as expected.
+
+```css
+:root {
+	--text-10xl: --spacing(42); /* 168px */
+}
+```
+
+```css
+@utility icon-10xl {
+	width: var(--text-10xl);
+	height: var(--text-10xl);
+}
+```
+
+## Alternatives
+
+Looking for something a bit different? Check out these other popular alternatives.
+
+{/* prettier-ignore */}
+<Framework id="svelte">
+- [Iconify](https://iconify.design/): provides a vast array of icon sets supported by popular icon libraries.
+- [Font Awesome](https://fontawesome.com/): provides a huge variety of icons in their free tier.
+- [SimpleIcons](https://simpleicons.org/): provides an excellent selection of brand icons.
+</Framework>
+{/* prettier-ignore */}
+<Framework id="react">
+- [Radix Icons](https://www.radix-ui.com/icons): features modern styles and a large selection, supports React only.
+- [Iconify](https://iconify.design/): provides a vast array of icon sets supported by popular icon libraries.
+- [Font Awesome](https://fontawesome.com/): provides a huge variety of icons in their free tier.
+- [HeroIcons](https://heroicons.com/): from the makers of Tailwind CSS, supports React and Vue.
+- [SimpleIcons](https://simpleicons.org/): provides an excellent selection of brand icons.
+</Framework>
